@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: gold;
+        }
+
+        header {
+            height: 200px;
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 2em;
+        }
+
+        main {
+            height: 600px;
+            width: 500px;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            margin: auto;
+        }
+
+        button {
+            margin: 5px auto;
+            border: none;
+            border-radius: 30px;
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: tomato;
+        }
+
+        button:focus > div {
+            display: block;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        div {
+            height: 300px;
+            width: 500px;
+            border-radius: 30px;
+            background-color: tomato;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Questão 3</h1>
+    </header>
+    <main>
+        <p>Quais são os registros de DNS disponíveis para o endereço escolhido? Detalhe cada um dos registros encontrados.<br><br>
+	    - Registros DNS:<br>
+		- wikipedia.org. <br>
+		- ns2.wikimedia.org.<br>
+		- ns1.wikimedia.org.<br>
+		- ns0.wikimedia.org.<br><br>
+	    - Detalhamento:<br><br>
+        - wikipedia.org é o endereço DNS correspondente ao IP 208.80.154.224 e é um registro A (address) <br><br>
+        - ns2.wikimedia.org é o endereço DNS correspondente ao IP 91.198.174.239 e é tanto um registro A (address) quanto um registro NS (name server)<br><br>
+        - ns1.wikimedia.org é o endereço DNS correspondente ao IP 208.80.153.231 e é tanto um registro A (address) quanto um registro NS (name server)<br><br>
+        - ns0.wikimedia.org é o endereço DNS correspondente ao IP 208.80.154.238 e é tanto um registro A (address) quanto um registro NS (name server)<br><br>
+        - Registro A (address): associa um endereço IP a um domínio<br><br>
+        - Registro NS (name server): indicam quais servidores atuam como serviço DNS do site.<br>
+        </p>
+        <button>
+            <p>Clique aqui para ver o terminal</p>
+            <div>
+                <img src="imagens/terminal2.png" alt="">
+            </div>
+        </button>
+    </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+    <style>
+        * {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: gold;
+        }
+
+        header {
+            height: 200px;
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+            font-size: 2em;
+        }
+
+        main {
+            height:650px;
+            width: 650px;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            margin: auto;
+            text-align: center;
+        }
+
+        img#diagrama {
+            height: 600px;
+            margin: 30px auto;
+        }
+
+        button {
+            margin: 5px auto;
+            border: none;
+            display: block;
+            width: 100px;
+            height: 30px;
+            background-color: tomato;
+            position: absolute;
+            top: 370px;
+            left: 980px;
+        }
+
+        button:focus > div {
+            display: block;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        div {
+            height: 200px;
+            width: 650px;
+            border-radius: 30px;
+            background-color: tomato;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        img#terminal {
+            width: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Questão 6</h1>
+    </header>
+    <main>
+        <p>Utilizando a ferramenta “dig” com a opção “+trace”, associada ao analisador de pacotes<br> WireShark, identifique os pacotes do protocolo DNS e reconstrua uma mensagem DNS</p>
+        <img id="diagrama" src="imagens/Pacote DNS.png" alt="Foto trabalho">
+        <button>
+            <p>Clique aqui para ver as flags</p>
+            <div>
+                <img id="terminal" src="imagens/flag.png" alt="">
+            </div>
+        </button>
+    </main>
+</body>
+
+</html>
